@@ -9,25 +9,26 @@
         <form ng-submit="doLogin()">
             <div class="list list-inset">
                 <label class="item item-input">
-                    <input type="text" ng-model="loginData.username" placeholder="Username">
+                    <input type="text" ng-model="loginData.Username" placeholder="Username">
                 </label>
                 <label class="item item-input">
-                    <input type="password" ng-model="loginData.password" placeholder="Password">
+                    <input type="password" ng-model="loginData.Password" placeholder="Password">
                 </label>
 
-
-                <button class="button button-block button-positive " type="submit">Log in</button>
                 <ul class="list">
-                    <li class="item item-toggle text-center">
-                        <label class="toggle">
-                            <input type="checkbox">
+                    <li class="item item-toggle">
+                        Remember me
+                        <label class="toggle toggle-assertive">
+                            <input type="checkbox" ng-model="loginData.RememberMe">
                             <div class="track">
                                 <div class="handle"></div>
                             </div>
                         </label>
-                        Remember me
                     </li>
                 </ul>
+
+                <button class="button button-block button-positive " type="submit">Log in</button>
+
             </div>
         </form>
     </ion-content>
